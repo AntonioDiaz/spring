@@ -11,6 +11,6 @@ public class PruebaBeanFactory {
 	public static void main(String[] args) {
 		BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
 		ServicioRemoto servicio = beanFactory.getBean("servicioRemoto", ServicioRemoto.class);
-		System.out.println("El valor es " + servicio.consultaDato());
+		System.out.println("El valor es: " + servicio.consultaDato());
 	}
 }
