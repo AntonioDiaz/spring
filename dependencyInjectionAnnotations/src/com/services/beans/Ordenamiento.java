@@ -1,4 +1,4 @@
-package com;
+package com.services.beans;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service (value="ordenamiento")
 public class Ordenamiento implements Proceso {
 
 	@Override

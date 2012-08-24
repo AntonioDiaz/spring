@@ -1,8 +1,8 @@
-package com;
+package com.services.beans;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service (value="calculo")
 public class Calculo implements Proceso {
 
 	@Override
