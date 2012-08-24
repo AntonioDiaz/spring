@@ -1,1 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="persona1" class="com.springcollections.beans.Persona">
+		<property name="nombre" value="Rod Jonhson" />
+		<property name="edad" value="50" />
+	</bean>
+	<bean id="persona2" class="com.springcollections.beans.Persona">
+		<property name="nombre" value="James Gosling" />
+		<property name="edad" value="57" />
+	</bean>
+	<bean id="manejador" class="com.springcollections.ManejadorColecciones">
+		<property name="lista">
+			<list>
+				<ref bean="persona1" />
+				<ref bean="persona2" />
+			</list>
+		</property>
+	</bean>
+</beans>
