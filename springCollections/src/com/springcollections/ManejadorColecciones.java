@@ -11,43 +11,52 @@ import com.springcollections.beans.Persona;
 
 public class ManejadorColecciones {
 	
-	private List<Persona> lista;
-	private Persona[] arreglo;
-	private Set<Persona> conjunto;
-	private Map<Persona, Object> mapa;
-	private Properties propiedades;
+	private List<Persona> myList;
+	private Persona[] myArray;
+	private Set<Persona> mySet;
+	private Map<String, Persona> myMap;
+	private Properties myProperties;
 	
-	public List<Persona> getLista() {
-		return lista;
+	public List<Persona> getMyList() {
+		return myList;
 	}
-	public void setLista(List<Persona> lista) {
-		this.lista = lista;
+
+	public void setMyList(List<Persona> myList) {
+		this.myList = myList;
 	}
-	public Persona[] getArreglo() {
-		return arreglo;
+
+	public Persona[] getMyArray() {
+		return myArray;
 	}
-	public void setArreglo(Persona[] arreglo) {
-		this.arreglo = arreglo;
+
+	public void setMyArray(Persona[] myArray) {
+		this.myArray = myArray;
 	}
-	public Set<Persona> getConjunto() {
-		return conjunto;
+
+	public Set<Persona> getMySet() {
+		return mySet;
 	}
-	public void setConjunto(Set<Persona> conjunto) {
-		this.conjunto = conjunto;
+
+	public void setMySet(Set<Persona> mySet) {
+		this.mySet = mySet;
 	}
-	public Map<Persona, Object> getMapa() {
-		return mapa;
+
+	public Map<String, Persona> getMyMap() {
+		return myMap;
 	}
-	public void setMapa(Map<Persona, Object> mapa) {
-		this.mapa = mapa;
+
+	public void setMyMap(Map<String, Persona> myMap) {
+		this.myMap = myMap;
 	}
-	public Properties getPropiedades() {
-		return propiedades;
+
+	public Properties getMyProperties() {
+		return myProperties;
 	}
-	public void setPropiedades(Properties propiedades) {
-		this.propiedades = propiedades;
+
+	public void setMyProperties(Properties myProperties) {
+		this.myProperties = myProperties;
 	}
-	
+
 	@Override
 	public String toString() {
 		 return ToStringBuilder.reflectionToString(this);

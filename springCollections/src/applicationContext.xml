@@ -11,11 +11,45 @@
 		<property name="edad" value="57" />
 	</bean>
 	<bean id="manejador" class="com.springcollections.ManejadorColecciones">
-		<property name="lista">
+		<property name="myList">
 			<list>
 				<ref bean="persona1" />
 				<ref bean="persona2" />
+				<bean id="personaNula" class="com.springcollections.beans.Persona">
+				    <property name="nombre"><null/></property >
+				    <property name="edad" value="26" />
+				</bean>
 			</list>
+		</property>
+		<property name="myArray">
+			<array>
+				<ref bean="persona1" />
+				<ref bean="persona2" />
+				<bean id="persona3" class="com.springcollections.beans.Persona">
+					<property name="nombre" value="Dennys Ritchie" />
+					<property name="edad" value="70" />
+				</bean>				
+			</array>
+		</property>	
+		<property name="mySet">
+		    <set>
+		        <ref bean="persona1" />
+		        <ref bean="persona2" />
+		        <ref bean="persona2" />
+		    </set>
+		</property>
+		<property name="myMap">
+		    <map>
+		    	<entry key="personaKey" value-ref="persona1" />
+		    </map>
+		</property>
+		<property name="myProperties">
+		    <value>
+		        nombre=Alex
+		        pais=Mexico
+		        sitio=http://javatutoriales.blogspot.com
+		        facebook=http://www.facebook.com/pages/Java-Tutoriales/121935157864634
+		    </value>
 		</property>
 	</bean>
 </beans>
