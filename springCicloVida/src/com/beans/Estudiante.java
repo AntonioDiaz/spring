@@ -1,4 +1,4 @@
-package com.spring.ciclovida.beans;
+package com.beans;
 
 public interface Estudiante {
     int presentaExamen();
