@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="estudianteUni" class="com.beans.Universitario" />
-	<bean id="estudianteInsti" class="com.beans.Bachiller" scope="prototype"/>
-	
-	<bean id="beanFactory" class="com.beans.BeanFactory" factory-method="getInstancia" />
-	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-init-method="inicializa"
+	default-destroy-method="destruye">
+	<bean id="estudianteUni" class="com.beans.UniversitarioInterfaces"/>
+	<bean id="estudianteInsti" class="com.beans.Bachiller" init-method="preparaEstudiante" destroy-method="despideEstudiante"/>
+	<bean id="doctorado" class="com.beans.EstudianteDoctorado" />
+	<bean id="estudianteGuarderia" class="com.beans.EstudianteGuarderiaAnotaciones" />
+	<bean id="myBean" class="com.beans.BeanStatic" factory-method="getInstancia" />
 </beans>
