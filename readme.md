@@ -1,6 +1,6 @@
 Ejemplos de spring obtenidos de http://www.javatutoriales.com/
 <ol>
-  <li>helloSpringXML</li>
+	<li>helloSpringXML</li>
 	<li>helloSpringAnnotationsWithNOXML</li>
 	<li>helloSpringAnnotationsWithXML</li>
 	<li>dependencyInjectionXML</li>
