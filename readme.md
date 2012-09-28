@@ -1,4 +1,4 @@
-Ejemplos de spring obtenidos de http://www.javatutoriales.com/ :
+Ejemplos de spring obtenidos de http://www.javatutoriales.com/
 <ol>
 	<li>helloSpringXML</li>
 	<li>helloSpringAnnotationsWithNOXML</li>
